@@ -6,12 +6,13 @@ npm init -y
 ```
 
 ## Typescript
+### Instalação
 Execute no `PowerShell`:
 ```
 npm i typescript -D
 npx tsc --init
 ```
-## Configuração Typescript
+### Configuração
 Edite `tsconfig.json`
 ```
 {
@@ -22,6 +23,7 @@ Edite `tsconfig.json`
 ```
 
 ## Express - Gerenciador de Rotas
+### Instalação
 Execute no `PowerShell`:
 ```
 npm i express
@@ -29,10 +31,12 @@ npm i @types/express -D
 ```
 
 ## TS-NODE-DEV - Conversor de TS pra JS
+### Instalação
 Execute no `PowerShell`:
 ```
 npm i ts-node-dev -D
 ```
+### Configuração
 Ajuste o `package.json`:
 ```
 "scripts": {
@@ -42,6 +46,7 @@ Ajuste o `package.json`:
 ```
 
 ## Primas - ORM
+### Instalação
 Execute no `PowerShell`
 ```
 npm i prisma -D
@@ -51,18 +56,23 @@ npm i @prisma/client
 Instale as extensões 
 * `Prisma.prisma`
 * `alexcvzz.vscode-sqlite`
-Adicione a flag --exit-child no scirpt `dev` em `package.json` para reiniciar a conexão toda vez que o arquivo é salvo
+
+### Configurações
+Adicione a flag `--exit-child` no scirpt `dev` em `package.json` para reiniciar a conexão toda vez que o arquivo é salvo
 ```
 "scripts": {
     "dev": "tsnd --exit-child src/server.ts"
 }
 ```
 ## CORS - Segurança da API
+### Instalação
 Execute no `PowerShell`:
 ```
 npm i cors
 npm i @types/cors -D
 ```
+
+### Configuração
 Faça o `express` usar o `cors`:
 ```
 import express from "express";
